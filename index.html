@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Rock-Paper-Scissors-Lizard-Spoke</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="Scoreboard">
+                <div class="title">
+                    <img src="assets/logo-bonus.png"/>
+                </div>
+                <div class="Score">
+                    <p>SCORE<p>
+                    <h1>0</h1>
+                </div>
+            </div>
+        
+        <div class="symbols">
+             <div class="symbol spock ">
+                 <img src="assets/icon-spock.png" alt="spock" width="120" height="120" onclick="picksymbol('spock')" />
+            </div>
+            <div class="symbol scissors">
+                <img src="assets/icon-scissors.png" alt="scissors" width="120" height="120" onclick="picksymbol('scissors')"/>
+            </div>
+             <div class="symbol paper" >
+                <img src="assets/icon-paper.png" alt="paper" width="120" height="120" onclick="picksymbol('paper')"/>
+            </div>
+             <div class="symbol lizard">
+                <img src="assets/icon-lizard.png" alt="lizard" width="120" height="120" onclick="picksymbol('lizard')"/>
+            </div>
+            <div class="symbol rock">
+                <img src="assets/icon-rock.png" alt="rock" width="120" height="120" onclick="picksymbol('rock')"/>
+            </div>
+        </div>
+        <button class="rules-btn" tabindex="1">rules</button>
+    <div class="modal">
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2 class="modal__heading">rules</h2>
+          <button class="close-btn">
+            <img src="assets/icon-close.png" alt="Close Button" />
+          </button>
+        </header>
+        <img
+          src="assets/image-rules-bonus.png"
+          alt="Rules Image"
+          class="rules-img"
+        />
+      </div>
+    </div>    
+            <div class="contest">
+                <div class="userpick">
+                    <h1>YOU PICKED</h1>
+                    <div class="handimage">
+                        <img id="userpickimage" src="assets/icon-paper.png"/>
+                        
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="decision">
+                        <h1> YOU WIN</h1><!-- comment --></div>
+                    <div class="newgame" onclick="restartgame()">PLAY AGAIN</div>    
+                </div>
+                <div class="computerpick">
+                    <h1>THE HOUSE PICKED</h1><!-- comment -->
+                    <div class="handimage">
+                        <img  id="computerpickimage" src="assets/icon-scissors.png"/>
+                    </div>
+                </div>
+            </div>
+     </div>
+    </body>
+</html>
