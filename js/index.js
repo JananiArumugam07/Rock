@@ -23,7 +23,7 @@ const picksymbol=(symbol)=>{
 
 const pickcomputersymbol=()=>{
     let symbols=["Scissors","paper","rock","lizard","spock"];
-    let cpsymbol=symbols[Math.floor(Math.random()*5)];
+    let cpsymbol=symbols[Math.floor(Math.random()*symbols.length)];
     return cpsymbol;
 
 };
